@@ -1,0 +1,66 @@
+.ac-banner {
+    background: url('../../assets/img/contacto.jpg');
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ac-title {
+    color: #666666;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.ac-form {
+    max-width: 800px;
+    margin: 0 auto;
+    &__fields {
+        display: flex;
+        flex-direction: row;
+        margin: 1em 2em;
+        &__field { 
+            width: 50%;
+            margin: 1em 0;
+            &:first-child {
+                margin-right: 1em;
+            }
+            &:last-child {
+                margin-left: 1em;
+            }
+            input {
+                border: 0;
+                border-bottom: 1px solid #B1B1B1;
+                width: 90%;
+                padding: 1em .5em;
+            }
+        }
+        &__txt {
+            font-size: 18px;
+            color: #666666;
+            font-weight: lighter;
+        }
+        
+    }
+    &__comment {
+         margin: 1em 2em;
+        textarea {
+            border: 0;
+            border-bottom: 1px solid #B1B1B1;
+            padding: 1em .5em;
+            width: 100%;
+            display: block;
+        }
+    }
+
+    &__button{
+        margin: 2em 0;
+        text-align: center;
+        button {
+            border: 1px solid #2A77BB;
+            color: #2A77BB;
+            padding: .8em 2em;
+            background: transparent;
+        }
+    }
+}

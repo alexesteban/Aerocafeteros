@@ -1,0 +1,48 @@
+:host {
+    .ac-intro {
+        background: url('../../assets/img/introBG.jpg') no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        &__logo {
+            background: rgba(255,255,255,.4);
+            padding: 1em;
+            text-align: center;
+        }
+        &__start {
+            text-align: center;
+            &__btn {
+                cursor: pointer;
+                border: 0;
+                font-size: 26px;
+                color: #FFF;
+                font-weight: 300;
+                padding: .7em 2.5em;
+                background: #0B2C40;
+                border-radius: 0 0 10px 10px;
+                display: inline-block;
+                text-decoration: none;
+            }
+        }
+        &__footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: auto;
+            padding: 3% 6%;
+            background: rgba(255,255,255,.6);
+            &__info {
+                font-size: 26px;
+                color: #262626;
+                padding: .2em 0;
+                i {
+                    margin-right: .5em;
+                    &:before {
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
