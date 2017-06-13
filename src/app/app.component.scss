@@ -91,3 +91,103 @@
         
     }
 }
+
+@media screen and (max-width: 680px) { 
+    .ac-body {
+        &--active {
+            position: fixed;
+            top: 0;
+            right: 280px;
+        } 
+    }
+    .ac-header{
+        &__nav {
+            display: block;
+            position: fixed;
+            background: #fff;
+            z-index: 9999;
+            top: 0;
+            right: -999px;
+            padding: 0;
+            width: 280px;
+            height: 100%;
+            transition: all .5s;
+            &__link {
+                display: block;
+                height: auto;
+                margin: 0;
+                a {
+                    padding: 1em 1.5em;
+                }
+            }
+             &--active {
+                    right: 0;
+                }
+        }
+        &__logo {
+            width: 220px;
+            padding: .5em 1em;
+        }
+        &__icon {
+            position: absolute;
+            top: .2em;
+            right: 0;
+            font-size: 24px;
+            color: silver;
+            padding: 1em;
+            display: block;
+        }
+    }
+
+    .ac-footer {
+    padding: 1em;
+    &--wp {
+        flex-direction: column;
+    }
+    &__section {
+        border-right: 0;
+        padding: 1em 0;
+        width: 100%;
+        text-align: center;
+        &__list {
+            padding: 0;
+            margin: 0;
+            &__item {
+                list-style: none;
+                color: #FFF;
+                font-size: 14px;
+                padding: .2em 0;
+                a {
+                    text-decoration: none;
+                    color: #FFF;
+                    &:hover {
+                        color: #BC2C30;
+                    }
+                }
+                i {
+                    margin-right: .8em;
+                }
+            }
+        }
+    }
+    &__social {
+        display: block;
+        width: 100%;
+        padding-top: 1em;
+        text-align: center;
+        &__icon {
+            display: inline-block;
+            text-decoration: none;
+            color: #FFF;
+            i {
+           
+            padding: 0 1em;
+            &:before {
+                 font-size: 30px;
+            }
+            }
+        }
+        
+    }
+}
+}

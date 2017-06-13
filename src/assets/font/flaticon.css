@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 26/05/2017 13:16
+  	Creation date: 13/06/2017 05:47
   	*/
 
 @font-face {
@@ -29,33 +29,34 @@ font-style: normal;
 margin-left: 20px;
 }
 
-.flaticon-cityscape:before { content: "\f100"; }
-.flaticon-airplane:before { content: "\f101"; }
-.flaticon-free-delivery-truck:before { content: "\f102"; }
-.flaticon-transport-1:before { content: "\f103"; }
-.flaticon-delivery-truck:before { content: "\f104"; }
-.flaticon-transport:before { content: "\f105"; }
-.flaticon-monitor:before { content: "\f106"; }
-.flaticon-technology:before { content: "\f107"; }
-.flaticon-photo-1:before { content: "\f108"; }
-.flaticon-mail:before { content: "\f109"; }
-.flaticon-instagram:before { content: "\f10a"; }
-.flaticon-cancel-1:before { content: "\f10b"; }
-.flaticon-phone-call:before { content: "\f10c"; }
-.flaticon-down-arrow:before { content: "\f10d"; }
-.flaticon-speaker-giving-a-lecture-on-a-stand:before { content: "\f10e"; }
-.flaticon-website-design-symbol:before { content: "\f10f"; }
-.flaticon-twitter:before { content: "\f110"; }
-.flaticon-money:before { content: "\f111"; }
-.flaticon-cancel:before { content: "\f112"; }
-.flaticon-internet:before { content: "\f113"; }
-.flaticon-photo:before { content: "\f114"; }
-.flaticon-multimedia-1:before { content: "\f115"; }
-.flaticon-people-2:before { content: "\f116"; }
-.flaticon-info:before { content: "\f117"; }
-.flaticon-people-1:before { content: "\f118"; }
-.flaticon-multimedia:before { content: "\f119"; }
-.flaticon-people:before { content: "\f11a"; }
-.flaticon-industrial-robot:before { content: "\f11b"; }
-.flaticon-facebook-logo-button:before { content: "\f11c"; }
-.flaticon-interface:before { content: "\f11d"; }
+.flaticon-menu-button-of-three-horizontal-lines:before { content: "\f100"; }
+.flaticon-cityscape:before { content: "\f101"; }
+.flaticon-airplane:before { content: "\f102"; }
+.flaticon-free-delivery-truck:before { content: "\f103"; }
+.flaticon-transport-1:before { content: "\f104"; }
+.flaticon-delivery-truck:before { content: "\f105"; }
+.flaticon-transport:before { content: "\f106"; }
+.flaticon-monitor:before { content: "\f107"; }
+.flaticon-technology:before { content: "\f108"; }
+.flaticon-photo-1:before { content: "\f109"; }
+.flaticon-mail:before { content: "\f10a"; }
+.flaticon-instagram:before { content: "\f10b"; }
+.flaticon-cancel-1:before { content: "\f10c"; }
+.flaticon-phone-call:before { content: "\f10d"; }
+.flaticon-down-arrow:before { content: "\f10e"; }
+.flaticon-speaker-giving-a-lecture-on-a-stand:before { content: "\f10f"; }
+.flaticon-website-design-symbol:before { content: "\f110"; }
+.flaticon-twitter:before { content: "\f111"; }
+.flaticon-money:before { content: "\f112"; }
+.flaticon-cancel:before { content: "\f113"; }
+.flaticon-internet:before { content: "\f114"; }
+.flaticon-photo:before { content: "\f115"; }
+.flaticon-multimedia-1:before { content: "\f116"; }
+.flaticon-people-2:before { content: "\f117"; }
+.flaticon-info:before { content: "\f118"; }
+.flaticon-people-1:before { content: "\f119"; }
+.flaticon-multimedia:before { content: "\f11a"; }
+.flaticon-people:before { content: "\f11b"; }
+.flaticon-industrial-robot:before { content: "\f11c"; }
+.flaticon-facebook-logo-button:before { content: "\f11d"; }
+.flaticon-interface:before { content: "\f11e"; }

@@ -14,7 +14,7 @@ body, html {
 section {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 2em 1em;
+    padding: 0 1em;
 }
 .spinner {
   margin: 100px auto;
@@ -69,4 +69,11 @@ section {
     transform: scaleY(1.0);
     -webkit-transform: scaleY(1.0);
   }
+}
+
+
+@media screen and (max-width: 680px) { 
+    section {
+      padding: 0;
+    }
 }

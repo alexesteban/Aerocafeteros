@@ -1,92 +1,98 @@
-<header *ngIf="urlRedirect !== '/intro'" class="ac-header">
-    <div class="ac-header__logo">
-        <a href="/home">
-             <img src="assets/img/logo.png" alt="">
-        </a>
-       
-    </div>
-    <ul class="ac-header__nav">
-        <li class="ac-header__nav__link">
-            <a  [ngClass]="{'active': urlRedirect === '/home'}" href="/home">Home</a>
-        </li>
-        <li class="ac-header__nav__link">
-            <a [ngClass]="{'active': urlRedirect === '/nosotros'}" href="/nosotros">Nosotros</a>
-        </li>
-        <li class="ac-header__nav__link">
-            <a [ngClass]="{'active': urlRedirect === '/servicios'}" href="/servicios">Servicios</a>
-        </li>
-        <li class="ac-header__nav__link">
-            <a [ngClass]="{'active': urlRedirect === '/contacto'}" href="/contacto">Contácto</a>
-        </li>
-    </ul>
-</header>
-
-<router-outlet></router-outlet>
-
-<footer class="ac-footer">
-    <div class="ac-footer--wp">
-<div class="ac-footer__section">
-        <ul class="ac-footer__section__list">
-            <li class="ac-footer__section__list__item">
-                <a href="/home">HOME</a>
-            </li>
-            <li class="ac-footer__section__list__item">
-                <a href="/nosotros">NOSOTROS</a>
-            </li>
-            <li class="ac-footer__section__list__item">
-                <a href="/servicios">SERVICIOS</a>
-            </li>
-            <li class="ac-footer__section__list__item">
-                <a href="/contacto">CONTÀCTO</a>
-            </li>
-        </ul>
-    </div>
-    <div class="ac-footer__section">
-        <ul class="ac-footer__section__list">
-            <li class="ac-footer__section__list__item">
-                <i class="flaticon-mail"></i>
-                contacto@aerocafeteros.com
-            </li>
-            <li class="ac-footer__section__list__item">
-                <i class="flaticon-phone-call"></i>
-                310 400 7985   
-            </li>
-            <li class="ac-footer__section__list__item">
-                <i class="flaticon-phone-call"></i>
-                310 400 0517   
-            </li>
-        </ul>
-    </div>
-    <div class="ac-footer__section">
-        <ul class="ac-footer__section__list">
-            <li class="ac-footer__section__list__item">
-                <i class="flaticon-money"></i>
-                Cra 68 # 28-25 Manizales
-            </li>
-            <li class="ac-footer__section__list__item">
-                <i class="flaticon-phone-call"></i>
-                311 853 6059
-            </li>
-        </ul>
-    </div>
-    <div class="ac-footer__section">
-        <div class="ac-footer__section__logo">
-            <img src="assets/img/logo_footer.png" alt="">
-        </div>
-    </div>
-
-    </div>
-    
-    <div class="ac-footer__social">
-        <a class="ac-footer__social__icon" target="_blank" href="https://www.facebook.com/aerocafeteros/">
-            <i class="flaticon-facebook-logo-button"></i>
-        </a>
-        <a class="ac-footer__social__icon" target="_blank" href="https://twitter.com/aerocafeteros">
-            <i class="flaticon-twitter"></i>
-        </a>
-        <a class="ac-footer__social__icon" target="_blank" href="https://www.instagram.com/aerocafeteros/">
-            <i class="flaticon-instagram"></i>
-        </a>
+<div class="ac-body"  [ngClass]="{'ac-body--active': menuActive}">
+    <header *ngIf="urlRedirect !== '/intro'" class="ac-header">
+        <div class="ac-header__logo">
+            <a href="/home">
+                <img src="assets/img/logo.png" alt="">
+            </a>
         
-    </div>
-</footer>
+        </div>
+        <ul class="ac-header__nav" [ngClass]="{'ac-header__nav--active': menuActive}">
+            <li class="ac-header__nav__link">
+                <a  [ngClass]="{'active': urlRedirect === '/home'}" href="/home">Home</a>
+            </li>
+            <li class="ac-header__nav__link">
+                <a [ngClass]="{'active': urlRedirect === '/nosotros'}" href="/nosotros">Nosotros</a>
+            </li>
+            <li class="ac-header__nav__link">
+                <a [ngClass]="{'active': urlRedirect === '/servicios'}" href="/servicios">Servicios</a>
+            </li>
+            <li class="ac-header__nav__link">
+                <a [ngClass]="{'active': urlRedirect === '/contacto'}" href="/contacto">Contácto</a>
+            </li>
+        </ul>
+
+        <i class="flaticon-menu-button-of-three-horizontal-lines ac-header__icon" aria-hidden="true" (click)="toggleMenu()"></i>
+
+    </header>
+
+    <router-outlet></router-outlet>
+
+    <footer class="ac-footer">
+        <div class="ac-footer--wp">
+    <div class="ac-footer__section">
+            <ul class="ac-footer__section__list">
+                <li class="ac-footer__section__list__item">
+                    <a href="/home">HOME</a>
+                </li>
+                <li class="ac-footer__section__list__item">
+                    <a href="/nosotros">NOSOTROS</a>
+                </li>
+                <li class="ac-footer__section__list__item">
+                    <a href="/servicios">SERVICIOS</a>
+                </li>
+                <li class="ac-footer__section__list__item">
+                    <a href="/contacto">CONTÀCTO</a>
+                </li>
+            </ul>
+        </div>
+        <div class="ac-footer__section">
+            <ul class="ac-footer__section__list">
+                <li class="ac-footer__section__list__item">
+                    <i class="flaticon-mail"></i>
+                    contacto@aerocafeteros.com
+                </li>
+                <li class="ac-footer__section__list__item">
+                    <i class="flaticon-phone-call"></i>
+                    310 400 7985   
+                </li>
+                <li class="ac-footer__section__list__item">
+                    <i class="flaticon-phone-call"></i>
+                    310 400 0517   
+                </li>
+            </ul>
+        </div>
+        <div class="ac-footer__section">
+            <ul class="ac-footer__section__list">
+                <li class="ac-footer__section__list__item">
+                    <i class="flaticon-money"></i>
+                    Cra 68 # 28-25 Manizales
+                </li>
+                <li class="ac-footer__section__list__item">
+                    <i class="flaticon-phone-call"></i>
+                    311 853 6059
+                </li>
+            </ul>
+        </div>
+        <div class="ac-footer__section">
+            <div class="ac-footer__section__logo">
+                <img src="assets/img/logo_footer.png" alt="">
+            </div>
+        </div>
+
+        </div>
+        
+        <div class="ac-footer__social">
+            <a class="ac-footer__social__icon" target="_blank" href="https://www.facebook.com/aerocafeteros/">
+                <i class="flaticon-facebook-logo-button"></i>
+            </a>
+            <a class="ac-footer__social__icon" target="_blank" href="https://twitter.com/aerocafeteros">
+                <i class="flaticon-twitter"></i>
+            </a>
+            <a class="ac-footer__social__icon" target="_blank" href="https://www.instagram.com/aerocafeteros/">
+                <i class="flaticon-instagram"></i>
+            </a>
+            
+        </div>
+    </footer>
+
+</div>

@@ -1,5 +1,4 @@
-:host {
-    .ac-intro {
+.ac-intro {
         background: url('../../assets/img/introBG.jpg') no-repeat;
         background-size: cover;
         width: 100%;
@@ -40,6 +39,29 @@
                     margin-right: .5em;
                     &:before {
                         font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+
+@media screen and (max-width: 680px) { 
+    .ac-intro {
+        &__logo {
+            img {
+                width: 100%;
+            }
+        }
+        &__start {
+            &__btn {
+            }
+        }
+        &__footer {
+            &__info {
+                font-size: 18px;
+                i {
+                    &:before {
+                        font-size: 20px;
                     }
                 }
             }
