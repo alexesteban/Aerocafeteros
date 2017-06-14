@@ -88,3 +88,46 @@
         }
     }
 }
+
+@media screen and (max-width: 680px) { 
+    .ac-banner{
+        height: 200px;
+        &__txt {
+            width: 90%;
+            strong {
+                font-size: 32px;
+            }
+            span {
+                font-size: 16px;
+            }
+        }
+    }
+    .ac-date {
+        &__number {
+            font-size: 40px;
+        }
+    }
+
+    .ac-info {
+        font-size: 14px;
+        p {
+            width: 90%;
+        }
+    }
+
+    .ac-about {
+        flex-direction: column;
+        &__txt {
+            margin: 1em 0;
+            &:first-child {
+                border: 0;
+            }
+            &__title {
+                font-size: 30px;
+            }
+            &__info {
+                font-size: 14px;
+            }
+        }
+    }
+}

@@ -1,9 +1,15 @@
+.ac-body {
+    height: 100%;
+}
 .ac-header {
     display: flex;
     flex-direction: row;
     width: 100%;
     align-items: center;
     justify-content: space-between;
+    &__icon {
+        display: none;
+    }
     &__logo {
         width: 300px;
         padding: 1em 2em;
