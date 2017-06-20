@@ -10,7 +10,8 @@
       "outDir": "dist",
       "assets": [
         "assets",
-        "favicon_ac.ico"
+        "favicon_ac.ico",
+        ".htaccess"
       ],
       "index": "index.html",
       "main": "main.ts",
