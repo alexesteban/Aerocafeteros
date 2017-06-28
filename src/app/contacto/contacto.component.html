@@ -1,5 +1,6 @@
 <div class="ac-banner"></div>
 
+<form (ngSubmit)="post()" #contactForm="ngForm">
 <section>
   <h1 class="ac-title">
     Escríbenos
@@ -8,32 +9,62 @@
   <div class="ac-form">
     <div class="ac-form__fields">
       <div class="ac-form__fields__field">
-        <input type="text" placeholder="Nombres">
+        <input type="text" placeholder="Nombres"  #contactname="ngModel" name="name" [(ngModel)]="mail.name" required>
+        <div class="md-errors-spacer" [hidden]="contactname.valid || contactname.untouched">
+            <div  *ngIf="contactname.errors && contactname.errors.required">
+                Este campo es requerido
+            </div>
+        </div>
       </div>
       <div class="ac-form__fields__field">
-        <input type="text" placeholder="Apellidos">
+        <input type="text" placeholder="Apellidos" #contactlastname="ngModel" name="lastName" [(ngModel)]="mail.lastName" required>
+        <div class="md-errors-spacer" [hidden]="contactlastname.valid || contactlastname.untouched">
+            <div  *ngIf="contactlastname.errors && contactlastname.errors.required">
+                Este campo es requerido
+            </div>
+        </div>
       </div>
     </div>
 
     <div class="ac-form__fields">
       <div class="ac-form__fields__field">
-        <input type="text" placeholder="Email">
+        <input type="text" placeholder="Email"  #contactemail="ngModel" name="email" [(ngModel)]="mail.email" required  pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$">
+        <div class="md-errors-spacer" [hidden]="contactemail.valid || contactemail.untouched">
+            <div  *ngIf="contactemail.errors && contactemail.errors.required">
+                Este campo es requerido
+            </div>
+            <div  *ngIf="contactemail.errors && contactemail.errors.pattern">
+               Correo invalido
+            </div>
+        </div>
       </div>
       <div class="ac-form__fields__field">
-        <input type="text" placeholder="Teléfono">
+        <input type="text" placeholder="Teléfono"  #contactphone="ngModel" name="phone" [(ngModel)]="mail.phone" required>
+         <div class="md-errors-spacer" [hidden]="contactphone.valid || contactphone.untouched">
+            <div  *ngIf="contactphone.errors && contactphone.errors.required">
+                Este campo es requerido
+            </div>
+        </div>
       </div>
     </div>
 
     <div class="ac-form__comment">
       <span class="ac-form__fields__txt">Escríbe tu mensaje</span>
-      <textarea name="" id="" cols="20" rows="10"></textarea>
+      <textarea name="" id="" cols="20" rows="10"  #contactmessage="ngModel"  name="message" [(ngModel)]="mail.message" required></textarea>
+       <div class="md-errors-spacer" [hidden]="contactmessage.valid || contactmessage.untouched">
+            <div  *ngIf="contactmessage.errors && contactmessage.errors.required">
+                Este campo es requerido
+            </div>
+        </div>
     </div>
 
-    <div class="ac-form__button">
-      <button>
+    <div  class="ac-form__button">
+      <button  type="submit" [disabled]="!contactForm.form.valid">
         ENVIAR
       </button>
     </div>
 
   </div>
 </section>
+</form>
+

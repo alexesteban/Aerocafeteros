@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { NosotrosComponent } from './nosotros/nosotros.component';
 import { ServiciosComponent } from './servicios/servicios.component';
 import { ContactoComponent } from './contacto/contacto.component';
+import {ContactoService} from './contacto/contacto.service';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,7 @@ import { ContactoComponent } from './contacto/contacto.component';
     HttpModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ContactoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

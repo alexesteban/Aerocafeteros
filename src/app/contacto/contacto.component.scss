@@ -61,6 +61,11 @@
             color: #2A77BB;
             padding: .8em 2em;
             background: transparent;
+            opacity: 1;
+        }
+        button:disabled,
+        button[disabled]{
+            opacity: 0.4;
         }
     }
 }
