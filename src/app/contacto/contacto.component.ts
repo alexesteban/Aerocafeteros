@@ -12,7 +12,7 @@ export class ContactoComponent implements OnInit {
   getData:string;
   postData:string;
 
-  constructor( private contactoService:ContactoService ) { }
+  constructor( public contactoService:ContactoService ) { }
 
   ngOnInit() {
     this.mail = new Mail();
